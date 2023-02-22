@@ -1,0 +1,30 @@
+<div class="container w-25 mt-5">
+
+  <%= form_with model: flat do |f| %>
+    <div class="">
+      <p class="border p-2 text-center"> <%= f.label :name %>
+      <%= f.text_field :name %> </p>
+    </div>
+    <div class="">
+      <p class="border p-2 text-center"> <%= f.label :address %>
+      <%= f.text_field :address %> </p>
+    </div>
+
+    <div class="">
+    <p class="border p-2 text-center"> <%= f.label :description %>
+    <%= f.text_field :description%> </p>
+    </div>
+
+    <div class="">
+    <p class="border p-2 text-center"> <%= f.label :price_per_night %>
+    <%= f.text_field :price_per_night%> </p>
+    </div>
+
+    <div class="">
+    <p class="border p-2 text-center"> <%= f.label :number_of_guest %>
+    <%= f.select :number_of_guest, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]%> </p>
+    </div>
+
+    <p><%= f.submit class: "btn btn-outline-secondary btn-sm" %></p>
+  <% end %>
+</div>

@@ -1,0 +1,28 @@
+<div class="m-5">
+  <div class="">
+    <h1 class="fs-1">Title</h1>
+    <p class="fs-3" ><%= @flat.name %></p>
+  </div>
+
+  <div class="">
+    <h2 class="fs-2">Address</h2>
+    <p class="fs-5"><%= @flat.address %></p>
+  </div>
+
+  <div class="">
+    <h2 class="fs-2">description</h2>
+    <p class="fs-5"><%= @flat.description %></p>
+  </div>
+
+  <div class="">
+    <p class="fs-2"><i class="fa-solid fa-euro-sign"></i>
+    <%= @flat.price_per_night %></p>
+  </div>
+
+  <div class="">
+    <p class="fs-2"><i class="fa-solid fa-people-group"></i>
+    <%= @flat.number_of_guest %></p>
+  </div>
+
+  <p class="mt-3" > <%= link_to "Go back home", flats_path, class:"text-decoration-none btn btn-outline-secondary btn-sm"%> </p>
+</div>
